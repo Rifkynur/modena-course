@@ -6,26 +6,26 @@
 @theme {
     --font-inter:  "Inter", sans-serif;
 }
-@utility container {
-  padding-inline: 10px;
-  margin-inline: auto;
-
-  @variant sm {
+ .container {
+  margin-inline:auto ;
+    width: 100%;
     padding-inline: 20px;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
   }
-
-  @variant lg {
-    padding-inline: 80px;
-  }
-
-  @variant md {
-    padding-inline: 80px;
-  }
-
-  @variant xl {
-    padding-inline: 120px;
-  }
-}
 
 
 @layer base {

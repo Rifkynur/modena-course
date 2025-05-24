@@ -4,7 +4,9 @@
 @tailwind utilities;
 
 @theme {
+    --color-avocado-100: red;
     --font-inter:  "Inter", sans-serif;
+    --color-midnight: #121063;
 }
  .container {
   margin-inline:auto ;
@@ -26,7 +28,6 @@
       max-width: 96rem;
     }
   }
-
 
 @layer base {
   :root {

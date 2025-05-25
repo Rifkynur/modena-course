@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import BenefitsCard from './BenefitsCard'
+import { benefit } from '@/app/data/home'
 
 const Benefits = () => {
   return (
@@ -13,7 +14,9 @@ const Benefits = () => {
         <Button className='bg-white text-black hover:bg-slate-100 md:text-lg'>View All</Button>
     </div>
     <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-5'>
-    <BenefitsCard/>
+      {benefit.map(data => (
+         <BenefitsCard key={data.id} description={data.description} id={data.id} title={data.title}/>
+        ))}
     </div>
 
   </section>

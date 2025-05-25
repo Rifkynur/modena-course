@@ -20,7 +20,7 @@ const Navbar = () => {
             <div><img src="/Logo.png" alt="logo" /></div>
         </div>
         <HiMenuAlt3 className='size-8 md:hidden' onClick={()=>setNavbarIsOpen(true)}/>
-        <ul className={`font-semibold fixed ${navbarIsOpen ? 'left-0' : 'left-[-100%]'} bg-slate-50 h-screen top-0 bottom-0 w-[150px] shadow-md flex flex-col items-center pt-8 gap-6 duration-300 transition-all md:static md:bg-transparent md:h-fit md:flex-row md:w-fit md:shadow-none md:text-lg`}>
+        <ul className={`font-semibold fixed z-[100] ${navbarIsOpen ? 'left-0' : 'left-[-100%]'} bg-slate-50 h-screen top-0 bottom-0 w-[150px] shadow-md flex flex-col items-center pt-8 gap-6 duration-300 transition-all md:static md:bg-transparent md:h-fit md:flex-row md:w-fit md:shadow-none md:text-lg`}>
             <li className='w-full px-4 md:hidden' >
             <IoIosCloseCircleOutline className='ms-auto size-6' onClick={()=>setNavbarIsOpen(false)}/>
             </li>

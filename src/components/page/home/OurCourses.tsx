@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import OurCoursesCard from './OurCoursesCard'
+import { ourCourses } from '@/app/data/home'
 
 const OurCourses = () => {
   return (
@@ -12,8 +13,10 @@ const OurCourses = () => {
                 </div>
                 <Button className='bg-white text-black hover:bg-slate-100 md:text-lg'>View All</Button>
             </div>
-            <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-5'>
-            <OurCoursesCard/>
+            <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+              {ourCourses.map((data) => (
+                <OurCoursesCard key={data.id} description={data.description} img={data.img} levels={data.levels} teacher={data.teacher} times={data.times} title={data.title} />
+              ))}
             </div>
     </section>
   )

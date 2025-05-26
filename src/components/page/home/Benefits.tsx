@@ -13,7 +13,7 @@ const Benefits = () => {
         </div>
         <Button className='bg-white text-black hover:bg-slate-100 md:text-lg'>View All</Button>
     </div>
-    <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-5'>
+    <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
       {benefit.map(data => (
          <BenefitsCard key={data.id} description={data.description} id={data.id} title={data.title}/>
         ))}

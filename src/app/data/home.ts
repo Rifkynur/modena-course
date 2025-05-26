@@ -88,3 +88,11 @@ export const ourCourses = [
         description:"Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence."
     },
 ]
+export const testimonial = [
+  {
+    id:1,
+    img:"",
+    name:"",
+    testi : ""
+  }
+]

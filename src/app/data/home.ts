@@ -91,8 +91,58 @@ export const ourCourses = [
 export const testimonial = [
   {
     id:1,
-    img:"",
-    name:"",
-    testi : ""
-  }
+    img:"/testimonial/Image.png",
+    name:"Sarah L",
+    testi : "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!"
+  },
+   {
+    id:2,
+    img:"/testimonial/Image1.png",
+    name:"Jason M",
+    testi : "The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!"
+  },
+   {
+    id:3,
+    img:"/testimonial/Image2.png",
+    name:"Emily R",
+    testi : "The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!"
+  },
+    {
+    id:4,
+    img:"/testimonial/Image3.png",
+    name:"Michael K",
+    testi : "I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!"
+  },
+
+]
+
+export const slider = [
+  {
+    id:1,
+    img : "/slider/Logo.png"
+  },
+   {
+    id:2,
+    img : "/slider/Logo1.png"
+  },
+   {
+    id:3,
+    img : "/slider/Logo2.png"
+  },
+   {
+    id:4,
+    img : "/slider/Logo3.png"
+  },
+   {
+    id:5,
+    img : "/slider/Logo4.png"
+  },
+   {
+    id:6,
+    img : "/slider/Logo5.png"
+  },
+   {
+    id:7,
+    img : "/slider/Logo6.png"
+  },
 ]

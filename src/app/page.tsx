@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <div className="container">
       <Hero/>
+      <Slider/>
       <Benefits/>
       <OurCourses/>
       <Testimonial/>

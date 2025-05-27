@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import TestimonialCard from './TestimonialCard'
+import { testimonial } from '@/app/data/home'
 
 const Testimonial = () => {
   return (
@@ -12,8 +13,11 @@ const Testimonial = () => {
                 </div>
                 <Button className='bg-white text-black hover:bg-slate-100 md:text-lg'>View All</Button>
             </div>
-            <div className='mt-10 grid grid-cols-1 md:grid-cols-2 gap-5'>
-                <TestimonialCard/>
+            <div className='mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8'>
+              {testimonial.map((data)=>(
+                <TestimonialCard key={data.id} img={data.img} name={data.name} testi={data.testi}/>
+              ))}
+
             </div>
     </section>
   )

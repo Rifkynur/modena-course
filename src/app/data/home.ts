@@ -146,3 +146,90 @@ export const slider = [
     img : "/slider/Logo6.png"
   },
 ]
+
+export const ourPrice = [
+  {
+    id:1,
+    plan : "Free Plan",
+    price : "0",
+    features : [
+      {
+        id: 1,
+        available : true,
+        detailFeature : "Access to selected free courses."
+      },
+        {
+        id: 2,
+        available : true,
+        detailFeature : "Limited course materials and resources."
+      },
+        {
+        id: 3,
+        available : true,
+        detailFeature : "Basic community support."
+      },
+        {
+        id: 4,
+        available : true,
+        detailFeature : "No certification upon completion."
+      },
+        {
+        id: 5,
+        available : true,
+        detailFeature : "Ad-supported platform."
+      },
+        {
+        id: 6,
+        available : false,
+        detailFeature : "Access to exclusive Pro Plan community forums."
+      },
+        {
+        id: 7,
+        available : false,
+        detailFeature : "Early access to new courses and updates."
+      },
+    ]
+  },
+  {
+    id:2,
+    plan : "Pro Plan",
+    price : "79",
+    features : [
+      {
+        id: 1,
+        available : true,
+        detailFeature : "Unlimited access to all courses."
+      },
+        {
+        id: 2,
+        available : true,
+        detailFeature : "Unlimited course materials and resources."
+      },
+        {
+        id: 3,
+        available : true,
+        detailFeature : "Priority support from instructors."
+      },
+        {
+        id: 4,
+        available : true,
+        detailFeature : "Course completion certificates."
+      },
+        {
+        id: 5,
+        available : true,
+        detailFeature : "Ad-free experience."
+      },
+        {
+        id: 6,
+        available : true,
+        detailFeature : "Access to exclusive Pro Plan community forums."
+      },
+        {
+        id: 7,
+        available : true,
+        detailFeature : "Early access to new courses and updates."
+      },
+    ]
+  }
+]

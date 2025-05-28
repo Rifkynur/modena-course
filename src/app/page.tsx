@@ -4,6 +4,7 @@ import Benefits from "@/components/page/home/Benefits";
 import OurCourses from "@/components/page/home/OurCourses";
 import Testimonial from "@/components/page/home/Testimonial";
 import OurPricing from "@/components/page/home/OurPricing";
+import Faq from "@/components/page/home/Faq";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <OurCourses/>
       <Testimonial/>
       <OurPricing/>
+      <Faq/>
     </div>
   );
 }

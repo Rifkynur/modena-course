@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import * as React from 'react';
-import * as AccordionPrimitive from '@radix-ui/react-accordion';
-import { ChevronDown, Plus, Minus } from 'lucide-react';
+import * as React from "react";
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import { ChevronDown, Plus, Minus } from "lucide-react";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 const Accordion = AccordionPrimitive.Root;
 
@@ -12,28 +12,34 @@ const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item ref={ref} className={cn('border-b', className)} {...props} />
+  <AccordionPrimitive.Item
+    ref={ref}
+    className={cn("border-b", className)}
+    {...props}
+  />
 ));
-AccordionItem.displayName = 'AccordionItem';
+AccordionItem.displayName = "AccordionItem";
 
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
+  <AccordionPrimitive.Header className="flex  bg-slate-50 border border-gray-300 px-6 py-3 rounded-t-lg lg:p-12">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline group',
+        "flex flex-1 text-start items-center justify-between py-4 font-medium transition-all hover:underline group",
         className
       )}
       {...props}
     >
       {children}
-      <div className='size-fit p-[10px] bg-red-500 group-data-[state=open]:hidden rounded-lg'>
-      <Plus className="size-5 shrink-0 transition-transform duration-200 " />
+      <div className="size-fit p-[10px] bg-[#FFEACC] group-data-[state=open]:hidden rounded-lg">
+        <Plus className="size-5 shrink-0 transition-transform duration-200 " />
       </div>
-      <Minus className="size-5 shrink-0 transition-transform duration-200 group-data-[state=closed]:hidden" />
+      <div className="size-fit p-[10px] bg-[#FFEACC] group-data-[state=closed]:hidden rounded-lg">
+        <Minus className="size-5 shrink-0 transition-transform duration-200" />
+      </div>
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
@@ -46,7 +52,7 @@ const AccordionContent = React.forwardRef<
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
-      'overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down',
+      "overflow-hidden text-sm transition-all bg-gray-50 border border-gray-300 px-6 py-3 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down lg:p-12",
       className
     )}
     {...props}

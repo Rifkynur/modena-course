@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
-// import 'vanilla-infinite-marquee/infinite-marquee.css';
-
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,11 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} antialiased bg-[#F1F1F3]`}
-      >
-        <Navbar/>
+      <body className={`${inter.variable} antialiased bg-[#F1F1F3]`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

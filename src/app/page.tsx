@@ -8,14 +8,14 @@ import Faq from "@/components/page/home/Faq";
 
 export default function Home() {
   return (
-    <div className="container">
-      <Hero/>
-      <Slider/>
-      <Benefits/>
-      <OurCourses/>
-      <Testimonial/>
-      <OurPricing/>
-      <Faq/>
+    <div className="container min-h-screen">
+      <Hero />
+      <Slider />
+      <Benefits />
+      <OurCourses />
+      <Testimonial />
+      <OurPricing />
+      <Faq />
     </div>
   );
 }

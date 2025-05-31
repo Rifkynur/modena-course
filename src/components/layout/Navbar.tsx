@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoIosCloseCircleOutline } from "react-icons/io";
@@ -9,13 +9,25 @@ import { FaArrowRight } from "react-icons/fa6";
 const Navbar = () => {
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
   const pathname = usePathname();
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setNavbarIsOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
   return (
     <div className="container mx-auto py-6">
       <div className="w-full flex items-center justify-center gap-2 mb-4 text-sm text-white font-medium bg-orange-400 rounded-lg py-2 lg:py-3">
         <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <FaArrowRight className="" />
       </div>
-      <nav className="relative flex items-center justify-between">
+      <nav className="relative flex items-center justify-between" ref={navRef}>
         <div>
           <div>
             <img src="/Logo.png" alt="logo" />
@@ -53,7 +65,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href={"/"}>About us</Link>
+            <Link
+              href={"/about-us"}
+              className={`${pathname == "/about-us" ? "text-orange-400" : ""}`}
+            >
+              About Us
+            </Link>
           </li>
           <li>
             <Link href={"/"}>Pricing</Link>

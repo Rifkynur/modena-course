@@ -3,7 +3,7 @@ import AboutCard from "./AboutCard";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col gap-4 md:flex-row md:gap-4 md:justify-between py-8 md:py-10 lg:py-20">
+    <div className="flex flex-col gap-4 md:gap-4 py-8 md:py-10 lg:py-20">
       <h1 className="text-slate-700 font-semibold text-3xl md:w-[400px] lg:w-[700px] lg:text-5xl">
         About Modena Course
       </h1>
@@ -13,9 +13,6 @@ const Hero = () => {
         wide range of online courses designed to equip learners with the skills
         and knowledge needed to succeed in the ever-evolving digital landscape.
       </p>
-      <div className="py-10">
-        <AboutCard />
-      </div>
     </div>
   );
 };

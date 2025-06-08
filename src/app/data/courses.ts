@@ -245,3 +245,126 @@ export const courses = [
     ],
   },
 ];
+
+export const coursesStep = [
+  {
+    id: "01",
+    title: "Introduction to UI/UX Design",
+    steps: [
+      {
+        id: 1,
+        title: "Understanding UI/UX Design Principles",
+        desc: "Lesson 01",
+        time: "45 Minutes",
+      },
+      {
+        id: 2,
+        title: "Importance of User-Centered Design",
+        desc: "Lesson 02",
+        time: "45 Minutes",
+      },
+      {
+        id: 3,
+        title: "The Role of UI/UX Design in Product Development",
+        desc: "Lesson 03",
+        time: "45 Minutes",
+      },
+    ],
+  },
+  {
+    id: "02",
+    title: "User Research and Analysis",
+    steps: [
+      {
+        id: 1,
+        title: "Conducting User Research and Interviews",
+        desc: "Lesson 01",
+        time: "1 Hour",
+      },
+      {
+        id: 2,
+        title: "Analyzing User Needs and Behavior",
+        desc: "Lesson 02",
+        time: "1 Hour",
+      },
+      {
+        id: 3,
+        title: "Creating User Personas and Scenarios",
+        desc: "Lesson 03",
+        time: "45 Minutes",
+      },
+    ],
+  },
+  {
+    id: "03",
+    title: "Wireframing and Prototyping",
+    steps: [
+      {
+        id: 1,
+        title: "Introduction to Wireframing Tools and Techniques",
+        desc: "Lesson 01",
+        time: "1 Hour",
+      },
+      {
+        id: 2,
+        title: "Creating Low-Fidelity Wireframes",
+        desc: "Lesson 02",
+        time: "1 Hour",
+      },
+      {
+        id: 3,
+        title: "Prototyping and Interactive Mockups",
+        desc: "Lesson 03",
+        time: "45 Minutes",
+      },
+    ],
+  },
+  {
+    id: "04",
+    title: "Visual Design and Branding",
+    steps: [
+      {
+        id: 1,
+        title: "Color Theory and Typography in UI Design",
+        desc: "Lesson 01",
+        time: "1 Hour",
+      },
+      {
+        id: 2,
+        title: "Visual Hierarchy and Layout Design",
+        desc: "Lesson 02",
+        time: "1 Hour",
+      },
+      {
+        id: 3,
+        title: "Creating a Strong Brand Identity",
+        desc: "Lesson 03",
+        time: "45 Minutes",
+      },
+    ],
+  },
+  {
+    id: "05",
+    title: "Usability Testing and Iteration",
+    steps: [
+      {
+        id: 1,
+        title: "Usability Testing Methods and Techniques",
+        desc: "Lesson 01",
+        time: "1 Hour",
+      },
+      {
+        id: 2,
+        title: "Analyzing Usability Test Results",
+        desc: "Lesson 02",
+        time: "1 Hour",
+      },
+      {
+        id: 3,
+        title: "Iterating and Improving UX Designs",
+        desc: "Lesson 03",
+        time: "45 Minutes",
+      },
+    ],
+  },
+];

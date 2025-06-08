@@ -16,6 +16,7 @@ const Courses = () => {
             steps={data.steps}
             time={data.time}
             title={data.title}
+            id={data.id}
           />
         ))}
       </div>

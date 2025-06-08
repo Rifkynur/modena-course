@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useRouter } from "next/navigation";
 
 type step = {
   id?: number;
@@ -34,6 +36,10 @@ const CoursersCard = ({
   time,
   teacher,
 }: CoursesProps) => {
+  const router = useRouter();
+  const handleToDetailCourse = (id?: number) => {
+    router.push(`/courses/${id}`);
+  };
   return (
     <div className="p-6 bg-white rounded-lg flex flex-col gap-4 md:gap-7">
       <div className="flex flex-col items-start gap-5 md:flex-row md:items-end md:justify-between">
@@ -45,7 +51,10 @@ const CoursersCard = ({
             {desc}
           </p>
         </div>
-        <Button className="bg-gray-50 border text-black font-medium hover:bg-slate-200 lg:text-lg">
+        <Button
+          className="bg-gray-50 border text-black font-medium hover:bg-slate-200 lg:text-lg"
+          onClick={() => handleToDetailCourse(id)}
+        >
           View Course
         </Button>
       </div>

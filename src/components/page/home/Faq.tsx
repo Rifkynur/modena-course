@@ -11,8 +11,8 @@ import { faq } from "@/app/data/home";
 
 const Faq = () => {
   return (
-    <section className="py-8 flex flex-col gap-4 items-start  md:py-10 lg:py-20 md:justify-between lg:flex-row">
-      <div className="flex flex-col gap-4 items-start">
+    <section className="py-8 flex flex-col gap-4 items-start bg-white rounded-lg p-6 md:py-10 lg:py-20 md:justify-between lg:p-16 lg:flex-row ">
+      <div className="flex flex-col gap-4 items-start max-w-[420px]">
         <div className="flex flex-col gap-2 lg:gap-4">
           <h2 className="font-bold text-3xl lg:text-5xl">
             Frequently Asked Questions
@@ -27,7 +27,7 @@ const Faq = () => {
           See All FAQ&apos;s
         </Button>
       </div>
-      <div className="mt-10 p-4 flex flex-col gap-4 md:gap-8 w-full md:flex-1 md:max-w-[800px] bg-slate-50 md:p-8">
+      <div className="mt-10 p-4 flex flex-col gap-4 md:gap-8 w-full md:flex-1 md:max-w-[800px] md:p-8">
         {faq.map((data) => {
           return (
             <Accordion type="single" collapsible key={data.id}>

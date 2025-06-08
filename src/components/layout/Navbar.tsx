@@ -73,7 +73,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href={"/"}>Pricing</Link>
+            <Link
+              href={"/pricing"}
+              className={`${pathname == "/pricing" ? "text-orange-400" : ""}`}
+            >
+              Pricing
+            </Link>
           </li>
           <li>
             <Link href={"/"}>Contact</Link>

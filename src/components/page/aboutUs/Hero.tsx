@@ -1,5 +1,4 @@
 import React from "react";
-import AboutCard from "./AboutCard";
 
 const Hero = () => {
   return (
